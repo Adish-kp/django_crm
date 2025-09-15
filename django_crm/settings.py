@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'django_crm.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ.get('POSTGRES_DB', 'myproject_db'),
         'USER': os.environ.get('POSTGRES_USER', 'myproject_user'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'very-secure-password'),

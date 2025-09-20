@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crm',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ.get('POSTGRES_DB', 'myproject_db'),
         'USER': os.environ.get('POSTGRES_USER', 'myproject_user'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'very-secure-password'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', '123'),
         'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
         'PORT': os.environ.get('POSTGRES_PORT', '5432'),
     }
